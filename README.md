@@ -26,7 +26,7 @@ Take a photo of university equipment (computer, chair, projector, AC). The AI cl
 university-equipment-management/
 ├── frontend/            React UI
 ├── ml-model/
-│   ├── dataset/         Training images (not included in the repo)
+│   ├── dataset/         Training images (one folder per class)
 │   ├── train_model.py   Trains the model
 │   ├── predict.py       Runs a prediction on one image
 │   ├── app.py           Flask API
@@ -61,7 +61,7 @@ Open `http://localhost:5173`.
 
 ## Retraining the Model
 
-Training images are not included. Place them in `ml-model/dataset/` using one folder per class:
+The training images are included in `ml-model/dataset/`, with one folder per class. To add more images, put them in the matching folder:
 
 ```
 dataset/
@@ -82,6 +82,3 @@ cd ml-model
 python convert_dataset.py
 python train_model.py
 ```
-
-This produces `equipment_condition_model.keras` and `class_names.json`.
-
