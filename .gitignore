@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Runtime data
+ml-model/equipment.db
+ml-model/uploads/
+ml-model/dataset_condition/
+ml-model/dataset_type/
+
+# Secrets and editor/OS files
+.env
+.env.*
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+
+# Optional: uncomment if you don't want to publish the images
+# ml-model/dataset/
+frontend/.bolt/
+
+ml-model/dataset/
